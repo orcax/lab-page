@@ -1,0 +1,189 @@
+body {
+  position: relative;
+  padding-top: 50px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #333;
+  background-color: #fff;
+}
+
+#lab-header-nav {
+  text-shadow: 0 -1px 0 rgba(0,0,0,.15);
+  border-color: #000;
+  box-shadow: 0 1px 0 rgba(255,255,255,.1);
+}
+
+#lab-header-banner {
+  color: #999;
+  background-color: #222222;
+  padding: 30px 15px 30px 15px;
+  font-size: 16px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(0,0,0,.15);
+}
+
+#lab-header-banner h1 {
+  color: #fff;
+  font-size: 10px;
+}
+
+#lab-header-banner p {
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+#lab-header-banner .container {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  #lab-header-banner {
+    font-size: 18px;
+    text-align: left;
+  }
+  #lab-header-banner h1 {
+    font-size: 34px;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 992px) {
+  #lab-header-banner h1,
+  #lab-header-banner p {
+    margin-right: 40px;
+  }
+}
+
+.bs-footer {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  margin-top: 200px;
+  color: #777;
+  text-align: center;
+  border-top: 1px solid #e5e5e5;
+}
+.footer-links {
+  margin: 10px 0;
+  padding-left: 0;
+}
+.footer-links li {
+  display: inline;
+  padding: 0 2px;
+}
+.footer-links li:first-child {
+  padding-left: 0;
+}
+@media (min-width: 768px) {
+  .bs-footer {
+    text-align: left;
+  }
+  .bs-footer p {
+    margin-bottom: 0;
+  }
+}
+
+
+.bs-sidebar.affix {
+  position: static;
+}
+.bs-sidenav {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top:    10px;
+  padding-bottom: 10px;
+  text-shadow: 0 1px 0 #fff;
+  background-color: #f7f5fa;
+  border-radius: 5px;
+}
+.bs-sidebar .nav > li > a {
+  display: block;
+  color: #716b7a;
+  padding: 5px 20px;
+}
+.bs-sidebar .nav > li > a:hover,
+.bs-sidebar .nav > li > a:focus {
+  text-decoration: none;
+  background-color: #e5e3e9;
+  border-right: 1px solid #dbd8e0;
+}
+.bs-sidebar .nav > .active > a,
+.bs-sidebar .nav > .active:hover > a,
+.bs-sidebar .nav > .active:focus > a {
+  font-weight: bold;
+  color: #563d7c;
+  background-color: transparent;
+  border-right: 1px solid #563d7c;
+}
+.bs-sidebar .nav .nav {
+  display: none;
+  margin-bottom: 8px;
+}
+.bs-sidebar .nav .nav > li > a {
+  padding-top:    3px;
+  padding-bottom: 3px;
+  padding-left: 30px;
+  font-size: 90%;
+}
+
+/* Show and affix the side nav when space allows it */
+@media (min-width: 992px) {
+  .bs-sidebar .nav > .active > ul {
+    display: block;
+  }
+  /* Widen the fixed sidebar */
+  .bs-sidebar.affix,
+  .bs-sidebar.affix-bottom {
+    width: 213px;
+  }
+  .bs-sidebar.affix {
+    position: fixed; /* Undo the static from mobile first approach */
+    top: 80px;
+  }
+  .bs-sidebar.affix-bottom {
+    position: absolute; /* Undo the static from mobile first approach */
+  }
+  .bs-sidebar.affix-bottom .bs-sidenav,
+  .bs-sidebar.affix .bs-sidenav {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* Widen the fixed sidebar again */
+  .bs-sidebar.affix-bottom,
+  .bs-sidebar.affix {
+    width: 263px;
+  }
+}
+
+
+h1[id] {
+  padding-top: 80px;
+  margin-top: -45px;
+  font-size: 36px;
+}
+
+h2[id] {
+  padding-top: 80px;
+  margin-top: -45px;
+  font-size: 24px;
+}
+
+.lab-docs-section {
+  padding-top: 40px;
+}
+
+.bs-panel {
+  margin: 20px auto;
+  min-height: 600px;
+}
+
+.media img {
+  width: 135px;
+  height: 180px;
+}
+
+.media > .pull-left {
+  margin-right: 20px;
+}

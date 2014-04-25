@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Distributed Computing and Servicing Lab</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" >
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css" >
+  <link rel="stylesheet" href="css/style.css"  />
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/content.js"></script>
+  <script src="js/index.js"></script>
+</head>
+<body>
+
+  <!-- Header Navigation
+  ========================================================================= -->
+
+  <div id="lab-header-nav" class="navbar navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">DISCOMSE Lab</a>
+      </div>
+      <div id="lab-navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li name="home" class="active">
+            <a href="#home">
+              <span class="glyphicon glyphicon-home"></span>
+              <span>Home</span>
+            </a>
+          </li>
+          <li name="research">
+            <a href="#research">
+              <span class="glyphicon glyphicon-road"></span>
+              <span>Research</span>
+            </a>
+          </li>
+          <li name="people">
+            <a href="#people">
+              <span class="glyphicon glyphicon-user"></span>
+              <span>People</span>
+            </a>
+          </li>
+          <li name="teaching">
+            <a href="#teaching">
+              <span class="glyphicon glyphicon-user"></span>
+              <span>Teaching</span>
+            </a>
+          </li>
+          <li name="news">
+            <a href="#news">
+              <span class="glyphicon glyphicon-calendar"></span>
+              <span>News</span>
+            </a>
+          </li>
+          <li name="resource">
+            <a href="#resource">
+              <span class="glyphicon glyphicon-list-alt"></span>
+              <span>Resource</span>
+            </a>
+          </li>
+          <li name="links">
+            <a href="#links">
+              <span class="glyphicon glyphicon-link"></span>
+              <span>Links</span>
+            </a>
+          </li>
+          <li name="contact">
+            <a href="#contact">
+              <span class="glyphicon glyphicon-info-sign"></span>
+              <span>Contact</span>
+            </a>
+          </li>
+        </ul>
+      </div> <!-- /.collapse -->
+    </div> <!-- /.container -->
+  </div> <!-- /.navbar -->
+
+  <!-- Header Banner
+  ========================================================================= -->
+
+  <div id="lab-header-banner">
+    <div class="container">
+      <div class="media">
+        <a class="pull-left">
+          <img class="media-object" src="images/brand.ico" />
+        </a>
+        <div class="media-body">
+          <h1 name="lab-title" class="media-heading">Welcome to Distributed Computing and Servicing Lab</h1>
+          <p name="lab-intro">Distributed computing is a field of computer science that studies distributed systems. A distributed system is a software system in which components located on networked computers communicate and coordinate their actions by passing messages. The components interact with each other in order to achieve a common goal. Three significant characteristics of distributed systems are: concurrency of components, lack of a global clock, and independent failure of components.</p>
+        </div> <!-- /.media-body -->
+      </div> <!-- /.media -->
+    </div> <!-- /.container -->
+  </div> <!-- /.bs-header -->
+
+  <!-- Content
+  ========================================================================= -->
+
+  <div class="container bs-docs-container">
+    <div class="row">
+
+      <!-- Side Bar
+      ===================================================================== -->
+
+      <div class="col-md-3">
+        <div class="bs-sidebar hidden-print affix-top" role="complementary">
+          <ul class="nav bs-sidenav">
+            <li>
+              <a href="#home">Home</a>
+              <ul class="nav">
+                <li>
+                  <a href="#whatwearedoing">What we are doing</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#research">Research</a>
+              <ul class="nav">
+                <li><a href="#research-area">Research Area</a></li>
+                <li><a href="#research-project">Research Project</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#people">People</a>
+              <ul class="nav">
+                <li><a href="#faculty">Faculty</a></li>
+                <li><a href="#phd">PhD Student</a></li>
+                <li><a href="#master">Master Student</a></li>
+                <li><a href="#undergraduate">Undergraduate Student</a></li>
+              </ul>
+            </li>
+            <li><a href="#teaching">Teaching</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#resource">Resource</a></li>
+            <li>
+              <a href="#links">Links</a>
+              <ul class="nav">
+                <li><a href="#links-conf">Conferences</a></li>
+                <li><a href="#links-useful">Useful Links</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+              <ul class="nav">
+                <li><a href="#contact-address">Address</a></li>
+                <li><a href="#contact-email">Email</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div> <!-- /.bs-sidebar -->
+      </div> <!-- /.col-md-3 -->
+
+      <div class="col-md-9">
+
+        <!-- Home Section
+        =================================================================== -->
+
+        <div class="lab-docs-section">
+          <div class="page-header">
+            <h1 id="home">Home</h1>
+          </div>
+          <h2 id="lab-overview">Lab Overview</h2>
+          <p>分布式计算是近年提出的一种新的计算方式。所谓分布式计算就是在两个或多个软件互 相共享信息,这些软件既可以在同一台计算机上运行,也可以在通过网络连接起来的多台计 算机上运行。服务计算作为一门新兴的计算学科,代表了分布式计算的最新发展方向,是当 前学术界和工业界的研究热点。</p>
+          <p>同济大学软件学院分布式计算与服务实验室,致力于分布式计算和服务计算中的前沿技 术发展与研究。</p>
+        </div> <!-- /.bs-docs-section -->
+
+        <!-- Research Section
+        =================================================================== -->
+
+        <div class="bs-docs-section">
+          <div class="page-header">
+            <h1 id="research">Research</h1>
+          </div>
+          <h2 id="research-area">Research Area</h2>
+          <table class="table">
+            <tr>
+              <th>Area</th>
+              <th>Detail</th>
+            </tr>
+            <tr>
+              <td>Cloud Computing Service</td>
+              <td>
+                <li>SaaS (Software-as-a-Service)</li>
+                <li>PaaS (Platform-as-a-Service)</li>
+                <li>IaaS (Infrastructure-as-a-Service)</li>
+                <li>XaaS (Everything-as-a-Service)</li>
+              </td>
+            </tr>
+            <tr>
+              <td>Internet Service</td>
+              <td>
+                <li>Online Social Network Service</li>
+                <li>Distributed Online Social Network Service</li>
+                <li>Content Delivery Network Service</li>
+              </td>
+            </tr>
+            <tr>
+              <td>Intelligent Web Service</td>
+              <td>
+                <li>User Interest Discovery and Modeling</li>
+                <li>Intelligent User Profile Matching</li>
+                <li>Resource and Knowledge Representation</li>
+                <li>Active Resource Recommendation</li>
+              </td>
+            </tr>
+            <tr>
+              <td>Novel Intelligent Web Application System</td>
+              <td>
+                <li>Active Service Model</li>
+                <li>Distributed Cache</li>
+                <li>Automatic Network Topology Discovery</li>
+              </td>
+            </tr>
+          </table>
+          <h2 id="research-project">Research Project</h2>
+          <table class="table">
+            <tr>
+              <th>Project</th>
+              <th>Date</th>
+            </tr>
+            <tr>
+              <td>中央高校基本科研业务费专项资金项目:“面向服务的互联网中信息自主流动与适配机理的研究”</td>
+              <td>June, 2013 ~ May, 2015</td>
+            </tr>
+            <tr>
+              <td>国家重点基础研究发展计划(973计划)子课题:“信息服务的运行支撑平台及在交通、医疗信息服务中的实证研究”</td>
+              <td>January, 2010 ~ December, 2014</td>
+            </tr>
+          </table>
+        </div> <!-- /.bs-docs-section -->
+
+        <!-- People Section
+        =================================================================== -->
+
+        <div class="bs-docs-section">
+          <div class="page-header">
+            <h1 id="people">People</h1>
+          </div>
+
+          <!-- Faculty
+          ================================================================= -->
+
+          <h2 id="faculty">Faculty</h2>
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <div class="media">
+                <a class="pull-left">
+                  <img class="media-object img-rounded" src="images/zhangchenxi.jpg" />
+                </a>
+                <div class="media-body">
+                  <h3 class="media-heading">Zhang Chenxi, PhD, Professor</h3>
+                  <p>Email: xzhang2000@163.com</p>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <p><b>Research Interests:</b></p>
+                      <li>Computer Application</li>
+                      <li>Computer Architecture</li>
+                      <li>Embedded System</li>
+                      <li>Software Modeling and Verification</li>
+                      <li>Distributed Computing</li>
+                    </div>
+                    <div class="col-md-6">
+                      <p><b>Teaching:</b></p>
+                      <li>Introduction to Computer Architecture</li>
+                      <li>Programming Language for AI</li>
+                      <li>Principles of Computer Organization</li>
+                      <li>Embedded Software Development</li>
+                    </div>
+                  </div>
+                </div> <!-- /.media-body -->
+              </div> <!-- /.media -->
+            </div> <!-- /.panel-body -->
+          </div> <!-- /.panel -->
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <div class="media">
+                <a class="pull-left" href="#">
+                  <img class="media-object img-rounded" src="images/lijiangfeng.jpg" />
+                </a>
+                <div class="media-body">
+                  <h3 class="media-heading">Li Jiangfeng, PhD, Lecturer</h3>
+                  <p>Email: lijiangfeng1212@gmail.com</p>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <p><b>Research Interests:</b></p>
+                      <li>Peer-to-Peer Network</li>
+                      <li>Cloud Computing</li>
+                      <li>Distributed System</li>
+                      <li>Social Networks</li>
+                      <li>Information Service</li>
+                    </div>
+                    <div class="col-md-6">
+                      <p><b>Teaching:</b></p>
+                      <li>Introduction to Computer Science</li>
+                      <li>Distributed System</li>
+                      <li>C Programming Language</li>
+                      <li>Object-Oriented Programing Language (C++)</li>
+                    </div>
+                  </div>
+                </div> <!-- /.media-body -->
+              </div> <!-- /.media -->
+            </div> <!-- /.panel-body -->
+          </div> <!-- /.panel -->
+
+          <!-- PhD
+          ================================================================= -->
+
+          <h2 id="phd">PhD Student</h2>
+
+          <!-- Master Student
+          ================================================================= -->
+
+          <h2 id="master">Master Student</h2>
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <div class="media">
+                <a class="pull-left" href="#">
+                  <img class="media-object img-rounded" src="images/xianyikun.jpg" />
+                </a>
+                <div class="media-body">
+                  <h3 class="media-heading">Xian Yikun</h3>
+                  <p>Email: siriusxyk@gmail.com</p>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <p><b>Research Interests:</b></p>
+                      <li>Social Network Analysis</li>
+                      <li>Knowledge Discovery</li>
+                      <li>Information Retrieval</li>
+                    </div>
+                  </div>
+                </div> <!-- /.media-body -->
+              </div> <!-- /.media -->
+            </div> <!-- /.panel-body -->
+          </div> <!-- /.panel -->
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <div class="media">
+                <a class="pull-left" href="#">
+                  <img class="media-object img-rounded" src="images/zhangdi.jpg" />
+                </a>
+                <div class="media-body">
+                  <h3 class="media-heading">Zhang Di</h3>
+                  <p>Email: zhangdiago@163.com</p>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <p><b>Research Interests:</b></p>
+                      <li>Recommendation System</li>
+                    </div>
+                  </div>
+                </div> <!-- /.media-body -->
+              </div> <!-- /.media -->
+            </div> <!-- /.panel-body -->
+          </div> <!-- /.panel -->
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <div class="media">
+                <a class="pull-left" href="#">
+                  <img class="media-object img-rounded" src="images/user.png" />
+                </a>
+                <div class="media-body">
+                  <h3 class="media-heading">Meng Minsheng</h3>
+                  <p>Email: litnature@tongji.edu.cn</p>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <p><b>Research Interests:</b></p>
+                      <li></li>
+                    </div>
+                  </div>
+                </div> <!-- /.media-body -->
+              </div> <!-- /.media -->
+            </div> <!-- /.panel-body -->
+          </div> <!-- /.panel -->
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <div class="media">
+                <a class="pull-left" href="#">
+                  <img class="media-object img-rounded" src="images/user.png" />
+                </a>
+                <div class="media-body">
+                  <h3 class="media-heading">You Zhigang</h3>
+                  <p>Email: youzhigang710@163.com</p>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <p><b>Research Interests:</b></p>
+                      <li></li>
+                    </div>
+                  </div>
+                </div> <!-- /.media-body -->
+              </div> <!-- /.media -->
+            </div> <!-- /.panel-body -->
+          </div> <!-- /.panel -->
+
+          <!-- Undergraduate
+          ================================================================= -->
+
+          <h2 id="undergraduate">Undergraduate</h2>
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <div class="media">
+                <a class="pull-left" href="#">
+                  <img class="media-object img-rounded" src="images/wangyiran.jpg" />
+                </a>
+                <div class="media-body">
+                  <h3 class="media-heading">Wang Yiran</h3>
+                  <p>Email: wyr423@gmail.com</p>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <p><b>Research Interests:</b></p>
+                      <li>Machine Learning</li>
+                      <li>Social Networks</li>
+                      <li>Information Retrieval</li>
+                    </div>
+                  </div>
+                </div> <!-- /.media-body -->
+              </div> <!-- /.media -->
+            </div> <!-- /.panel-body -->
+          </div> <!-- /.panel -->
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <div class="media">
+                <a class="pull-left" href="#">
+                  <img class="media-object img-rounded" src="images/liaozhenyu.jpg" />
+                </a>
+                <div class="media-body">
+                  <h3 class="media-heading">Liao Zhenyu</h3>
+                  <p>Email: maple01@126.com</p>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <p><b>Research Interests:</b></p>
+                      <li>Social Networks</li>
+                      <li>Data Mining</li>
+                      <li>Cloud Computing</li>
+                      <li>Distributed System</li>
+                    </div>
+                  </div>
+                </div> <!-- /.media-body -->
+              </div> <!-- /.media -->
+            </div> <!-- /.panel-body -->
+          </div> <!-- /.panel -->
+        </div> <!-- /.bs-docs-section -->
+
+        <!-- Teaching Section
+        =================================================================== -->
+
+        <div class="bs-docs-section">
+          <div class="page-header">
+            <h1 id="teaching">Teaching</h1>
+          </div>
+          <h2>What are we doing?</h2>
+          <p>aaaaaaaaaaaaaaaaaaaaa</p>
+        </div> <!-- /.bs-docs-section -->
+
+        <!-- News Section
+        =================================================================== -->
+
+        <div class="bs-docs-section">
+          <div class="page-header">
+            <h1 id="news">News</h1>
+          </div>
+          <h2>What are we doing?</h2>
+          <p>aaaaaaaaaaaaaaaaaaaaa</p>
+        </div> <!-- /.bs-docs-section -->
+
+        <!-- Resource Section
+        =================================================================== -->
+
+        <div class="bs-docs-section">
+          <div class="page-header">
+            <h1 id="resource">Resource</h1>
+          </div>
+          <h2>Technical Report</h2>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">First Try</h3>
+            </div>
+            <div class="panel-body">
+              aaaaaaaaaaaaaaaaaaaaaa
+            </div>
+          </div>
+        </div> <!-- /.bs-docs-section -->
+
+        <!-- Links Section
+        =================================================================== -->
+
+        <div class="bs-docs-section">
+          <div class="page-header">
+            <h1 id="links">Links</h1>
+          </div>
+          <h2 id="links-conf">Conferences</h2>
+          <table class="table">
+            <tr>
+              <th>Name</th>
+              <th>Paper Due</th>
+            </tr>
+            <tr>
+              <td>ICCCN</td>
+              <td>March 3rd, 2014</td>
+            </tr>
+          </table>
+          <h2 id="links-useful">Useful Links</h2>
+          <table class="table">
+            <tr>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td><a href="http://www.cs.unibo.it/bison/">BISON</a></td>
+              <td>Biology-Inspired techniques for Self-Organization in dynamic Networks</td>
+            </tr>
+            <tr>
+              <td><a href="http://www.cs.unibo.it/~babaoglu/">Professor Ozalp Babaoglu</a></td>
+              <td>Home Page</td>
+            </tr>
+            <tr>
+              <td><a href="http://www.inf.u-szeged.hu/~jelasity/">Dr. Márk Jelasity</a></td>
+              <td>Home Page</td>
+            </tr>
+            <tr>
+              <td><a href="http://disi.unitn.it/~montreso/">Dr. Alberto Montresor</a></td>
+              <td>Home Page</td>
+            </tr>
+            <tr>
+              <td><a href="http://peersim.sourceforge.net/">Peersim</a></td>
+              <td>A Peer-to-Peer Simulator</td>
+            </tr>
+            <tr>
+              <td><a href="http://www.chinacloud.cn/">ChinaCloud</a></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><a href="http://netlab.pkusz.edu.cn/">CIRE</a></td>
+              <td>Center for Internet Research & Engineering</td>
+            </tr>
+            <tr>
+              <td><a href="http://netlab.pkusz.edu.cn/%e5%ad%a6%e6%9c%af%e6%9c%9f%e5%88%8a/">Call for Papers in CIRE</a></td>
+              <td></td>
+            </tr>
+          </table>
+        </div> <!-- /.bs-docs-section -->
+
+        <!-- Contact Section
+        =================================================================== -->
+
+        <div class="bs-docs-section">
+          <div class="page-header">
+            <h1 id="contact">Contact</h1>
+          </div>
+          <h2 id="contact-address">Address</h2>
+          <p>School of Software Engineering</p>
+          <p>Tongji University</p>
+          <p>Office 410, Jishi Building, 4800 Cao'An Highway</p>
+          <p>Shanghai, China<p>
+          <h2 id="contact-email">Email</h2>
+          <p>lijiangfeng1212@gmail.com</p>
+        </div> <!-- /.bs-docs-section -->
+
+      </div> <!-- /.col-md-9 -->
+    </div> <!-- /.row -->
+  </div> <!-- /.container -->
+
+  <!-- Footer
+  ========================================================================= -->
+
+  <div class="bs-footer" role="contentinfo">
+    <div class="container">
+      <p>Designed by Xian Yikun</p>
+      <p>Copyright 2014</p>
+    </div>
+  </div>
+</body>
+</html>

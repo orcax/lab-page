@@ -2,13 +2,13 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <title>Distributed Computing and Servicing Lab</title>
+  <title>Distributed Computing and Service Lab</title>
   <link rel="stylesheet" href="css/bootstrap.min.css" >
   <link rel="stylesheet" href="css/bootstrap-theme.min.css" >
   <link rel="stylesheet" href="css/style.css"  />
-  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/content.js"></script>
+  <script src="js/typed.js"></script>
   <script src="js/index.js"></script>
 </head>
 <body>
@@ -16,10 +16,10 @@
   <!-- Header Navigation
   ========================================================================= -->
 
-  <div id="lab-header-nav" class="navbar navbar-fixed-top navbar-inverse">
+  <div id="lab-header-nav" class="navbar navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
-        <a class="navbar-brand" href="index.html">DISCOMSE Lab</a>
+        <a class="navbar-brand" href="index.html">DCS Lab</a>
       </div>
       <div id="lab-navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
@@ -43,7 +43,7 @@
           </li>
           <li name="teaching">
             <a href="#teaching">
-              <span class="glyphicon glyphicon-user"></span>
+              <span class="glyphicon glyphicon-book"></span>
               <span>Teaching</span>
             </a>
           </li>
@@ -80,17 +80,23 @@
   ========================================================================= -->
 
   <div id="lab-header-banner">
-    <div class="container">
-      <div class="media">
-        <a class="pull-left">
-          <img class="media-object" src="images/brand.ico" />
-        </a>
-        <div class="media-body">
-          <h1 name="lab-title" class="media-heading">Welcome to Distributed Computing and Servicing Lab</h1>
-          <p name="lab-intro">Distributed computing is a field of computer science that studies distributed systems. A distributed system is a software system in which components located on networked computers communicate and coordinate their actions by passing messages. The components interact with each other in order to achieve a common goal. Three significant characteristics of distributed systems are: concurrency of components, lack of a global clock, and independent failure of components.</p>
-        </div> <!-- /.media-body -->
-      </div> <!-- /.media -->
-    </div> <!-- /.container -->
+    <h1>Distributed Computing and Service Laboratory</h1>
+    <div id="welcome-text">
+      <div id="welcome-title">
+        <span>dics_lab.py</span>
+      </div>
+      <div id="welcome-body">
+        <span id="typed"></span>
+      </div>
+    </div>
+    <div id="welcome-keyword">
+      <a class="style-pink">Distributed Computing</a>
+      <a class="style-orange">Information-Centric Networks</a>
+      <a class="style-yellow">Peer-to-Peer System</a>
+      <a class="style-green">Cloud Computing</a>
+      <a class="style-blue">Information Service</a>
+      <a class="style-purple">Web Intelligence</a>
+    </div>
   </div> <!-- /.bs-header -->
 
   <!-- Content
@@ -108,9 +114,7 @@
             <li>
               <a href="#home">Home</a>
               <ul class="nav">
-                <li>
-                  <a href="#whatwearedoing">What we are doing</a>
-                </li>
+                <li><a href="#lab-overview">Lab Overview</a></li>
               </ul>
             </li>
             <li>
@@ -118,25 +122,36 @@
               <ul class="nav">
                 <li><a href="#research-area">Research Area</a></li>
                 <li><a href="#research-project">Research Project</a></li>
+                <li><a href="#accepted-paper">Research Papers</a></li>
               </ul>
             </li>
             <li>
               <a href="#people">People</a>
               <ul class="nav">
                 <li><a href="#faculty">Faculty</a></li>
-                <li><a href="#phd">PhD Student</a></li>
                 <li><a href="#master">Master Student</a></li>
                 <li><a href="#undergraduate">Undergraduate Student</a></li>
               </ul>
             </li>
-            <li><a href="#teaching">Teaching</a></li>
+            <li>
+              <a href="#teaching">Teaching</a>
+              <ul class="nav">
+                <li><a href="#excellent-course">Excellent Course</a></li>
+                <li><a href="#teach-reform-project">Teaching Reform Project</a></li>
+              </ul>
+            </li>
             <li><a href="#news">News</a></li>
-            <li><a href="#resource">Resource</a></li>
+            <li>
+              <a href="#resource">Resource</a>
+              <ul class="nav">
+                <li><a href="#technical-report">Technical Report</a></li>
+              </ul>
+            </li>
             <li>
               <a href="#links">Links</a>
               <ul class="nav">
-                <li><a href="#links-conf">Conferences</a></li>
-                <li><a href="#links-useful">Useful Links</a></li>
+                <li><a href="#conference">Conference</a></li>
+                <li><a href="#useful-link">Useful Link</a></li>
               </ul>
             </li>
             <li>
@@ -160,8 +175,9 @@
             <h1 id="home">Home</h1>
           </div>
           <h2 id="lab-overview">Lab Overview</h2>
-          <p>分布式计算是近年提出的一种新的计算方式。所谓分布式计算就是在两个或多个软件互 相共享信息,这些软件既可以在同一台计算机上运行,也可以在通过网络连接起来的多台计 算机上运行。服务计算作为一门新兴的计算学科,代表了分布式计算的最新发展方向,是当 前学术界和工业界的研究热点。</p>
-          <p>同济大学软件学院分布式计算与服务实验室,致力于分布式计算和服务计算中的前沿技 术发展与研究。</p>
+          <p>Distributed computing is a field of computer science that studies distributed systems. A distributed system is a software system in which components located on networked computers communicate and coordinate their actions by passing messages. The components interact with each other in order to achieve a common goal. Three significant characteristics of distributed systems are: concurrency of components, lack of a global clock, and independent failure of components. Examples of distributed systems vary from SOA-based systems to massively multiplayer online games to peer-to-peer applications.</p>
+          <p>Services Computing has become a cross-discipline that covers the science and technology of bridging the gap between business services and IT services. The underneath breaking technology suite includes Web services and service-oriented architecture (SOA), cloud computing, business consulting methodology and utilities, business process modeling, transformation and integration. This scope of Services Computing covers the whole life-cycle of services innovation research that includes business componentization, services modeling, services creation, services realization, services annotation, services deployment, services discovery, services composition, services delivery, service-to-service collaboration, services monitoring, services optimization, as well as services management. The goal of Services Computing is to enable IT services and computing technology to perform business services more efficiently and effectively.</p>
+          <p>Distributed Computing and Service Laboratory in SSE, Tongji Univeristy is dedicated to the state-of-the-art techonology research in distributed computing and services computing.</p>
         </div> <!-- /.bs-docs-section -->
 
         <!-- Research Section
@@ -227,6 +243,55 @@
               <td>January, 2010 ~ December, 2014</td>
             </tr>
           </table>
+          <h2 id="accepted-paper">Research Papers</h2>
+          <div class="list-group">
+            <a class="list-group-item active">
+              <span class="badge">1</span>
+              2013
+            </a>
+            <a href="#" class="list-group-item">Jiangfeng Li, Chenxi Zhang. A Three-Dimensional Role Based User Management Model in Web Information Systems. Lecture Notes in Electrical Engineering, 2013(1).</a>
+          </div>
+          <div class="list-group">
+            <a class="list-group-item active">
+              <span class="badge">1</span>
+              2012
+            </a>
+            <a href="#" class="list-group-item">Jiangfeng Li, Chenxi Zhang. A 2D-Role Based Universal Dynamic Configuration Management Infrastructure. Journal of Convergence Information Technology, 2012(2), EI Index.</a>
+          </div>
+          <div class="list-group">
+            <a class="list-group-item active">
+              <span class="badge">1</span>
+              2011
+            </a>
+            <a href="#" class="list-group-item">Wei Wang, Jiangfeng Li, Wanchun Yang. Tit-for-Tat Based Solution in Parallel 3D Scenes Streaming. Journal of Convergence Information Technology, 2011(2), EI Index.</a>
+          </div>
+          <div class="list-group">
+            <a class="list-group-item active">
+              <span class="badge">1</span>
+              2010
+            </a>
+            <a href="#" class="list-group-item">Ming Gao, Jicheng Wang, Jiangfeng Li. WDB Data Extraction Based on Semantic Support. Computer Science, 2010(3).</a>
+          </div>
+          <div class="list-group">
+            <a class="list-group-item active">
+              <span class="badge">3</span>
+              2009
+            </a>
+            <a href="#" class="list-group-item">Jiangfeng Li, Chenxi Zhang. A Domain Based Two-Layer Autonomic Management Model in Grid Systems. In Proceedings of the 2nd IEEE International Conference on Computer Science and Software Engineering (CSSE'09), December 2009, EI Index.</a>
+            <a href="#" class="list-group-item">Jiangfeng Li, Chenxi Zhang. A Decentralized Cooperative Autonomic Management Model in Grid Systems. In Proceedings of the 4th International Conference on Frontier of Computer Science and Technology (FCST'09), December 2009, EI Index.</a>
+            <a href="#" class="list-group-item">Jiangfeng Li, Chenxi Zhang, et al. A Self Clustered Based Topology Model with Three Layers for Hybrid P2P Structure. Journal of Computational Information Systems, 2009(5), EI Index.</a>
+          </div>
+          <div class="list-group">
+            <a class="list-group-item active">
+              <span class="badge">4</span>
+              2008
+            </a>
+            <a href="#" class="list-group-item">Jiangfeng Li, Chenxi Zhang. SCP2P: A Self-Adaptive Peer-to-Peer Model Based on Peer Characteristics. Computer Applications, 2008(10).</a>
+            <a href="#" class="list-group-item">Jiangfeng Li, Chenxi Zhang. A Metadata Management Based Distributed P2P Model for Resource Sharing. In Proceedings of the 5th China National Computer Conference (CNCC'08), September 2008.</a>
+            <a href="#" class="list-group-item">Junhua Yin, Chenxi Zhang, Jiangfeng Li, Fan Zhang. PPShark: A Distributed Peer-to-Peer Resource Sharing System. Microcomputer Applications, 2008(8).</a>
+            <a href="#" class="list-group-item">Chenxi Zhang, Jiangfeng Li, Yi Liu, Weidong Zhao. Design and Implementation of a Universal Management System Based on Roles and Scope. Computer Engineering, 2008(4).</a>
+            <a href="#" class="list-group-item">沈立，张晨曦等，“指令扩展中相关子图的分析与处理”，《计算机辅助设计与图形学学报》，Vol.11，No.10，2009.</a>
+          </div>
         </div> <!-- /.bs-docs-section -->
 
         <!-- People Section
@@ -248,7 +313,7 @@
                   <img class="media-object img-rounded" src="images/zhangchenxi.jpg" />
                 </a>
                 <div class="media-body">
-                  <h3 class="media-heading">Zhang Chenxi, PhD, Professor</h3>
+                  <h3 class="media-heading">Chenxi Zhang, PhD, Professor</h3>
                   <p>Email: xzhang2000@163.com</p>
                   <div class="row">
                     <div class="col-md-6">
@@ -278,7 +343,7 @@
                   <img class="media-object img-rounded" src="images/lijiangfeng.jpg" />
                 </a>
                 <div class="media-body">
-                  <h3 class="media-heading">Li Jiangfeng, PhD, Lecturer</h3>
+                  <h3 class="media-heading">Jiangfeng Li, PhD, Lecturer</h3>
                   <p>Email: lijiangfeng1212@gmail.com</p>
                   <div class="row">
                     <div class="col-md-6">
@@ -302,11 +367,6 @@
             </div> <!-- /.panel-body -->
           </div> <!-- /.panel -->
 
-          <!-- PhD
-          ================================================================= -->
-
-          <h2 id="phd">PhD Student</h2>
-
           <!-- Master Student
           ================================================================= -->
 
@@ -318,7 +378,7 @@
                   <img class="media-object img-rounded" src="images/xianyikun.jpg" />
                 </a>
                 <div class="media-body">
-                  <h3 class="media-heading">Xian Yikun</h3>
+                  <h3 class="media-heading">Yikun Xian</h3>
                   <p>Email: siriusxyk@gmail.com</p>
                   <div class="row">
                     <div class="col-md-12">
@@ -339,7 +399,7 @@
                   <img class="media-object img-rounded" src="images/zhangdi.jpg" />
                 </a>
                 <div class="media-body">
-                  <h3 class="media-heading">Zhang Di</h3>
+                  <h3 class="media-heading">Di Zhang</h3>
                   <p>Email: zhangdiago@163.com</p>
                   <div class="row">
                     <div class="col-md-12">
@@ -358,7 +418,7 @@
                   <img class="media-object img-rounded" src="images/user.png" />
                 </a>
                 <div class="media-body">
-                  <h3 class="media-heading">Meng Minsheng</h3>
+                  <h3 class="media-heading">Minsheng Meng</h3>
                   <p>Email: litnature@tongji.edu.cn</p>
                   <div class="row">
                     <div class="col-md-12">
@@ -377,7 +437,7 @@
                   <img class="media-object img-rounded" src="images/user.png" />
                 </a>
                 <div class="media-body">
-                  <h3 class="media-heading">You Zhigang</h3>
+                  <h3 class="media-heading">Zhigang You</h3>
                   <p>Email: youzhigang710@163.com</p>
                   <div class="row">
                     <div class="col-md-12">
@@ -401,7 +461,7 @@
                   <img class="media-object img-rounded" src="images/wangyiran.jpg" />
                 </a>
                 <div class="media-body">
-                  <h3 class="media-heading">Wang Yiran</h3>
+                  <h3 class="media-heading">Yiran Wang</h3>
                   <p>Email: wyr423@gmail.com</p>
                   <div class="row">
                     <div class="col-md-12">
@@ -422,7 +482,7 @@
                   <img class="media-object img-rounded" src="images/liaozhenyu.jpg" />
                 </a>
                 <div class="media-body">
-                  <h3 class="media-heading">Liao Zhenyu</h3>
+                  <h3 class="media-heading">Zhenyu Liao</h3>
                   <p>Email: maple01@126.com</p>
                   <div class="row">
                     <div class="col-md-12">
@@ -446,8 +506,72 @@
           <div class="page-header">
             <h1 id="teaching">Teaching</h1>
           </div>
-          <h2>What are we doing?</h2>
-          <p>aaaaaaaaaaaaaaaaaaaaa</p>
+          <h2 id="excellent-course">Excellent Course</h2>
+          <table class="table">
+            <tr>
+              <th>Course</th>
+              <th>Date</th>
+              <th>Leader</th>
+            </tr>
+            <tr>
+              <td>同济大学实验教学改革项目：计算机基础课程交互实验及信息平台开发</td>
+              <td>2013 - 2015</td>
+              <td>Jiangfeng Li</td>
+            </tr>
+            <tr>
+              <td>教育部-IBM专业综合改革项目：云计算核心技术</td>
+              <td>2012 - 2013</td>
+              <td>Jiangfeng Li</td>
+            </tr>
+            <tr>
+              <td>国家精品课程：计算机系统结构</td>
+              <td>2008 - 2013</td>
+              <td>Chenxi Zhang</td>
+            </tr>
+            <tr>
+              <td>教育部-微软精品课程：嵌入式软件开发导论</td>
+              <td>2005 - 2006</td>
+              <td>Chenxi Zhang</td>
+            </tr>
+            <tr>
+              <td>教育部-SUN精品课程：计算机系统结构论</td>
+              <td>2008 - 2009</td>
+              <td>Chenxi Zhang</td>
+            </tr>
+            <tr>
+              <td>上海市精品课程：计算机系统结构</td>
+              <td>2006 - 2009</td>
+              <td>Chenxi Zhang</td>
+            </tr>
+          </table>
+          <h2 id="teach-reform-project">Teaching Reform Project</h2>
+          <table class="table">
+            <tr>
+              <th>Project</th>
+              <th>Date</th>
+              <th>Leader</th>
+            </tr>
+            <tr>
+              <td>同济大学实验教学改革项目：计算机基础课程交互实验及信息平台开发</td>
+              <td>2013 - 2015</td>
+              <td>Jiangfeng Li</td>
+            </tr>
+            <tr>
+              <td>863项目专题：海气耦合模式CNOP的高效并行算法及其优化</td>
+              <td>2011 - 2012</td>
+              <td>Jiangfeng Li</td>
+            </tr>
+            <tr>
+              <td>“973”课题：信息服务的运行支撑平台及在交通、医疗信息服务中的实证研究</td>
+              <td>2010 - 2014</td>
+              <td>Jiangfeng Li</td>
+            </tr>
+            <tr>
+              <td>上海市科委重点攻关项目：网上大规模虚拟展示关键技术的研究</td>
+              <td>2008 - 2010</td>
+              <td>Jiangfeng Li</td>
+            </tr>
+          </table>
         </div> <!-- /.bs-docs-section -->
 
         <!-- News Section
@@ -457,8 +581,9 @@
           <div class="page-header">
             <h1 id="news">News</h1>
           </div>
-          <h2>What are we doing?</h2>
-          <p>aaaaaaaaaaaaaaaaaaaaa</p>
+          <ul>
+            <li>Our paper has been accepted by the International Conference on Service Oriented Computing, Berlin, German, Dec. 2-5, 2013.</li>
+          </ul>
         </div> <!-- /.bs-docs-section -->
 
         <!-- Resource Section
@@ -468,13 +593,20 @@
           <div class="page-header">
             <h1 id="resource">Resource</h1>
           </div>
-          <h2>Technical Report</h2>
+          <h2 id="technical-report">Technical Report</h2>
           <div class="panel panel-default">
             <div class="panel-heading">
-              <h3 class="panel-title">First Try</h3>
+              <h3 class="panel-title">Probabilistic Models for Text Mining</h3>
             </div>
             <div class="panel-body">
-              aaaaaaaaaaaaaaaaaaaaaa
+              <p>
+                <b>Abstract:&nbsp</b>
+                <span>A number of probabilistic methods such as LDA, hidden Markov mod- els, Markov random fields have arisen in recent years for probabilistic analysis of text data. This chapter provides an overview of a variety of probabilistic models for text mining. The chapter focuses more on the fundamental probabilistic techniques, and also covers their various applications to different text mining problems. Some examples of such applications include topic modeling, language modeling, document clas- sification, document clustering, and information extraction.</span>
+              </p>
+              <p>
+                <b>Keywords:&nbsp</b>
+                <span>Probabilistic models, mixture model, stochastic process, graphical model</span>
+              </p>
             </div>
           </div>
         </div> <!-- /.bs-docs-section -->
@@ -486,18 +618,55 @@
           <div class="page-header">
             <h1 id="links">Links</h1>
           </div>
-          <h2 id="links-conf">Conferences</h2>
+          <h2 id="conference">Conference</h2>
           <table class="table">
             <tr>
               <th>Name</th>
               <th>Paper Due</th>
+              <th>Location</th>
             </tr>
             <tr>
-              <td>ICCCN</td>
-              <td>March 3rd, 2014</td>
+              <td><a href="http://socialinformatics2014.scienceengineering.org/">SocialInformatics 2014</a></td>
+              <td>July 15th, 2014</td>
+              <td>Cambridge, Massachusetts, USA</td>
+            </tr>
+            <tr>
+              <td><a href="http://bnaic2014.org">BNAIC 2014</a></td>
+              <td>July 6th, 2014</td>
+              <td>Nijmegen, Netherlands</td>
+            </tr>
+            <tr>
+              <td><a href="http://icdm2014.sfu.ca">ICDM 2014</a></td>
+              <td>June 24th, 2014</td>
+              <td>Shenzhen, China</td>
+            </tr>
+            <tr>
+              <td><a href="http://www.conferen.org/ISI2014/">ISI 2014</a></td>
+              <td>June 10th, 2014</td>
+              <td>Harbin, China</td>
+            </tr>
+            <tr>
+              <td><a href="http://cikm2014.fudan.edu.cn">CIKM 2014</a></td>
+              <td>June 4th, 2014</td>
+              <td>Shanghai, China</td>
+            </tr>
+            <tr>
+              <td><a href="http://www.waset.org/conference/2014/07/paris/ICCIT">ICCIT 2014</a></td>
+              <td>May 31st, 2014</td>
+              <td>Paris, France</td>
+            </tr>
+            <tr>
+              <td><a href="http://theory.utdallas.edu/SEDE2014/">SEDE 2014</a></td>
+              <td>May 30th, 2014</td>
+              <td>New Orleans, Louisiana, USA</td>
+            </tr>
+            <tr>
+              <td><a href="http://recsys.acm.org/recsys14/">RecSys 2014</a></td>
+              <td>May 7th, 2014</td>
+              <td>Foster City, Silicon Valley, USA</td>
             </tr>
           </table>
-          <h2 id="links-useful">Useful Links</h2>
+          <h2 id="useful-link">Useful Link</h2>
           <table class="table">
             <tr>
               <th>Name</th>
@@ -535,6 +704,10 @@
               <td><a href="http://netlab.pkusz.edu.cn/%e5%ad%a6%e6%9c%af%e6%9c%9f%e5%88%8a/">Call for Papers in CIRE</a></td>
               <td></td>
             </tr>
+            <tr>
+              <td><a href="http://radimrehurek.com/gensim/index.html">gensim</a></td>
+              <td>Gensim is a FREE Python library for topic modeling</td>
+            </tr>
           </table>
         </div> <!-- /.bs-docs-section -->
 
@@ -561,7 +734,7 @@
   <!-- Footer
   ========================================================================= -->
 
-  <div class="bs-footer" role="contentinfo">
+  <div id="lab-footer" role="contentinfo">
     <div class="container">
       <p>Designed by Xian Yikun</p>
       <p>Copyright 2014</p>

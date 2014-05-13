@@ -14,24 +14,22 @@ $(function(){
 
   var navHeight = $('.navbar').outerHeight(true) + 10
 
-  $('body')
-    .on('activate.bs.scrollspy', function () {
-      var id = $('.bs-sidenav li.active a').attr('href').slice(1);
-      $('#lab-navbar li').removeClass('active');
-      $('#lab-navbar li[name=' + id + ']').addClass('active');
-    })
-  $body.scrollspy({
-      target: '.bs-sidebar',
-      offset: navHeight
-    })
+  $('body').on('activate.bs.scrollspy', function () {
+    var id = $('.bs-sidenav li.active a').attr('href').slice(1);
+    $('#lab-navbar li').removeClass('active');
+    $('#lab-navbar li[name=' + id + ']').addClass('active');
+  }).scrollspy({
+    target: '.bs-sidebar',
+    offset: navHeight
+  });
 
   $('.bs-docs-container [href=#]').click(function (e) {
     e.preventDefault()
-  })
+  });
 
   // back to top
   setTimeout(function () {
-    var $sideBar = $('.bs-sidebar')
+    var $sideBar = $('.bs-sidebar');
 
     $sideBar.affix({
       offset: {
@@ -51,6 +49,42 @@ $(function(){
 
   setTimeout(function () {
     $('.bs-top').affix()
-  }, 100)
+  }, 120)
+
+  $("#typed").typed({
+    strings: [
+      '<span class="txt-blue">#!/usr/bin/python</span><br/>' + 
+      '<span class="txt-white">lab =&nbsp</span>' +
+      '<span class="txt-green">"Distributed Computing and Service Lab"</span><br/>' +
+      '<span class="txt-orange">print&nbsp</span>' +
+      '<span class="txt-green">"Welcome to %s !"&nbsp</span>' + 
+      '<span class="txt-white">% (lab)</span><br/>' +
+      '<span class="txt-white">fields = (</span>' +
+      '<span class="txt-green">"Distributed Computing"</span>' + 
+      '<span class="txt-white">,&nbsp</span>' +
+      '<span class="txt-green">"Service Computing"</span>' + 
+      '<span class="txt-white">)</span><br/>' +
+      '<span class="txt-pink">for&nbsp</span>' +
+      '<span class="txt-white">field&nbsp</span>' +
+      '<span class="txt-pink">in&nbsp</span>' +
+      '<span class="txt-white">fields:<br/>&nbsp&nbspresearch(field, level=</span>' +
+      '<span class="txt-green">"state-of-the-art"</span>' + 
+      '<span class="txt-white">)</span>' +
+      ''
+    ],
+    typeSpeed: -30,
+    backDelay: 500,
+    loop: false,
+    loopCount: false,
+    callback: function() {
+      $("#welcome-body").animate({height: '135px'}, {
+        complete: function() {
+          setTimeout(function() {
+            $("#welcome-keyword").show();
+          }, 500);
+        }
+      });
+    }
+  });
 
 });

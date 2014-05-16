@@ -15,21 +15,21 @@ $(function(){
   var navHeight = $('.navbar').outerHeight(true) + 10
 
   $('body').on('activate.bs.scrollspy', function () {
-    var id = $('.bs-sidenav li.active a').attr('href').slice(1);
+    var id = $('.lab-sidenav li.active a').attr('href').slice(1);
     $('#lab-navbar li').removeClass('active');
     $('#lab-navbar li[name=' + id + ']').addClass('active');
   }).scrollspy({
-    target: '.bs-sidebar',
+    target: '.lab-sidebar',
     offset: navHeight
   });
 
-  $('.bs-docs-container [href=#]').click(function (e) {
+  $('.lab-docs-container [href=#]').click(function (e) {
     e.preventDefault()
   });
 
   // back to top
   setTimeout(function () {
-    var $sideBar = $('.bs-sidebar');
+    var $sideBar = $('.lab-sidebar');
 
     $sideBar.affix({
       offset: {
@@ -41,17 +41,17 @@ $(function(){
           return (this.top = offsetTop - navOuterHeight - sideBarMargin)
         }
       , bottom: function () {
-          return (this.bottom = $('.bs-footer').outerHeight(true))
+          return (this.bottom = $('#lab-footer').outerHeight(true))
         }
       }
     })
   }, 100)
 
   setTimeout(function () {
-    $('.bs-top').affix()
+    $('.affix-top').affix()
   }, 120)
 
-  $("#typed").typed({
+  $('#typed').typed({
     strings: [
       '<span class="txt-blue">#!/usr/bin/python</span><br/>' + 
       '<span class="txt-white">lab =&nbsp</span>' +
@@ -77,14 +77,43 @@ $(function(){
     loop: false,
     loopCount: false,
     callback: function() {
-      $("#welcome-body").animate({height: '135px'}, {
+      $('#welcome-body').animate({height: '135px'}, {
         complete: function() {
           setTimeout(function() {
-            $("#welcome-keyword").show();
+            $('#welcome-keyword').show();
           }, 500);
         }
       });
     }
   });
+
+  $('.bottom-space').css({
+    'margin-bottom': (screen.height - 710) + 'px'
+  });
+
+  function setCookie(key, value) {
+    document.cookie = key + "=" + escape(value);
+  }
+
+  function getCookie(key) {
+    if (document.cookie.length > 0) {
+      c_start=document.cookie.indexOf(key + "=")
+      if (c_start != -1) { 
+        c_start = c_start + c_name.length + 1; 
+        c_end = document.cookie.indexOf(";", c_start);
+        if (c_end == -1) 
+          c_end = document.cookie.length;
+        return unescape(document.cookie.substring(c_start,c_end));
+      } 
+    }
+    return "";
+  }
+  
+  var visitCount = getCookie('visit_count');
+  if (visitCount == '') {
+    visitCount = 0;
+  }
+  ++visitCount;
+  setCookie('visit_count', visitCount);
 
 });

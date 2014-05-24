@@ -15,7 +15,9 @@ $(function(){
   var navHeight = $('.navbar').outerHeight(true) + 10
 
   $('body').on('activate.bs.scrollspy', function () {
-    var id = $('ul.lab-sidenav li.active a').attr('href').slice(1);
+    var id = $('ul.lab-sidenav li.active a').attr('href');
+    if (id === undefined) return;
+    id = id.slice(1);
     $('#lab-navbar li').removeClass('active');
     $('#lab-navbar li[name=' + id + ']').addClass('active');
   }).scrollspy({

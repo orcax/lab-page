@@ -3,25 +3,24 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Distributed Computing and Service Lab</title>
   <!-- CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css" >
-  <link rel="stylesheet" href="http://cdn.bootcss.com/highlight.js/7.3/styles/github.min.css" >
   <link rel="stylesheet" href="css/style.css" >
   <!-- Javascript -->
   <!--[if lt IE 9]>
   <script src="js/ie8-responsive-file-warning.js"></script>
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
   <![endif]-->
-  <!--[if lt IE 9]>
-  <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
-  <script src="http://cdn.bootcss.com/respond.js/1.3.0/respond.min.js"></script>
+  <!--[if lt IE 8]>
+  <script src="pie/PIE_IE678.js"></script>
+  <![endif]-->
+  <!--[if IE 9]>
+  <script src="pie/PIE_IE9.js"></script>
   <![endif]-->
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="http://cdn.bootcss.com/holder/2.0/holder.min.js"></script>
-  <script src="http://cdn.bootcss.com/highlight.js/7.3/highlight.min.js"></script>
-  <script src=" http://hm.baidu.com/h.js?3d8e7fc0de8a2a75f2ca3bfe128e6391" type="text/javascript"></script>
   <script src="js/typed.js"></script>
   <script src="js/index.js"></script>
 </head>
@@ -88,23 +87,25 @@
   ========================================================================= -->
 
   <div id="lab-header-banner">
-    <h1>Distributed Computing and Service Laboratory</h1>
-    <div id="welcome-text">
-      <div id="welcome-title">
-        <span>dics_lab.py</span>
+    <div id="lab-header-banner-overlay">
+      <h1>Distributed Computing and Service Laboratory</h1>
+      <div id="welcome-text">
+        <div id="welcome-title">
+          <span>dics_lab.py</span>
+        </div>
+        <div id="welcome-body">
+          <span id="typed"></span>
+        </div>
       </div>
-      <div id="welcome-body">
-        <span id="typed"></span>
+      <div id="welcome-keyword">
+        <a class="style-pink">Distributed Computing</a>
+        <a class="style-orange">Information-Centric Networks</a>
+        <a class="style-yellow">Peer-to-Peer System</a>
+        <a class="style-green">Cloud Computing</a>
+        <a class="style-blue">Information Service</a>
+        <a class="style-purple">Web Intelligence</a>
       </div>
-    </div>
-    <div id="welcome-keyword">
-      <a class="style-pink">Distributed Computing</a>
-      <a class="style-orange">Information-Centric Networks</a>
-      <a class="style-yellow">Peer-to-Peer System</a>
-      <a class="style-green">Cloud Computing</a>
-      <a class="style-blue">Information Service</a>
-      <a class="style-purple">Web Intelligence</a>
-    </div>
+    </div> <!-- /#lab-header-banner-overlay -->
   </div> <!-- /#lab-header-banner -->
 
   <!-- Content

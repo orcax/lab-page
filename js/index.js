@@ -15,7 +15,7 @@ $(function(){
   var navHeight = $('.navbar').outerHeight(true) + 10
 
   $('body').on('activate.bs.scrollspy', function () {
-    var id = $('.lab-sidenav li.active a').attr('href').slice(1);
+    var id = $('ul.lab-sidenav li.active a').attr('href').slice(1);
     $('#lab-navbar li').removeClass('active');
     $('#lab-navbar li[name=' + id + ']').addClass('active');
   }).scrollspy({
@@ -90,30 +90,5 @@ $(function(){
   $('.bottom-space').css({
     'margin-bottom': (screen.height - 710) + 'px'
   });
-
-  function setCookie(key, value) {
-    document.cookie = key + "=" + escape(value);
-  }
-
-  function getCookie(key) {
-    if (document.cookie.length > 0) {
-      c_start=document.cookie.indexOf(key + "=")
-      if (c_start != -1) { 
-        c_start = c_start + c_name.length + 1; 
-        c_end = document.cookie.indexOf(";", c_start);
-        if (c_end == -1) 
-          c_end = document.cookie.length;
-        return unescape(document.cookie.substring(c_start,c_end));
-      } 
-    }
-    return "";
-  }
-  
-  var visitCount = getCookie('visit_count');
-  if (visitCount == '') {
-    visitCount = 0;
-  }
-  ++visitCount;
-  setCookie('visit_count', visitCount);
 
 });

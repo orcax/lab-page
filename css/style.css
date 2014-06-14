@@ -90,7 +90,7 @@ body {
 }
 
 #lab-header-nav li.active a,
-#lab-header-nav a: hover {
+#lab-header-nav a:hover {
   color: white;
   background: #154FA3;
   -webkit-transition: all 0.5s;
@@ -245,8 +245,8 @@ body {
 }
 
 a.style-order-1 {
-  -webkit-animation: chgorder1 2.5s;
-  animation: chgorder1 2.5s;
+  -webkit-animation: chgorder1 2s;
+  animation: chgorder1 25s;
 }
 
 @-webkit-keyframes chgorder1 {
@@ -256,8 +256,8 @@ a.style-order-1 {
 }
 
 a.style-order-2 {
-  -webkit-animation: chgorder2 2.5s;
-  animation: chgorder2 2.5s;
+  -webkit-animation: chgorder2 2s;
+  animation: chgorder2 2s;
 }
 
 @-webkit-keyframes chgorder2 {
@@ -268,8 +268,8 @@ a.style-order-2 {
 }
 
 a.style-order-3 {
-  -webkit-animation: chgorder3 2.5s;
-  animation: chgorder3 2.5s;
+  -webkit-animation: chgorder3 2s;
+  animation: chgorder3 2s;
 }
 
 @-webkit-keyframes chgorder3 {
@@ -280,8 +280,8 @@ a.style-order-3 {
 }
 
 a.style-order-4 {
-  -webkit-animation: chgorder4 2.5s;
-  animation: chgorder4 2.5s;
+  -webkit-animation: chgorder4 2s;
+  animation: chgorder4 2s;
 }
 
 @-webkit-keyframes chgorder4 {
@@ -292,8 +292,8 @@ a.style-order-4 {
 }
 
 a.style-order-5 {
-  -webkit-animation: chgorder5 2.5s;
-  animation: chgorder5 2.5s;
+  -webkit-animation: chgorder5 2s;
+  animation: chgorder5 2s;
 }
 
 @-webkit-keyframes chgorder5 {
@@ -304,8 +304,8 @@ a.style-order-5 {
 }
 
 a.style-order-6 {
-  -webkit-animation: chgorder6 2.5s;
-  animation: chgorder6 2.5s;
+  -webkit-animation: chgorder6 2s;
+  animation: chgorder6 2s;
 }
 
 @-webkit-keyframes chgorder6 {
@@ -337,16 +337,16 @@ a.style-order-6 {
   padding: 5px 20px;
 }
 
-.lab-sidebar .nav > li > a: hover,
-.lab-sidebar .nav > li > a: focus {
+.lab-sidebar .nav > li > a:hover,
+.lab-sidebar .nav > li > a:focus {
   text-decoration: none;
   background-color: #e5e3e9;
   border-right: 1px solid #dbd8e0;
 }
 
 .lab-sidebar .nav > .active > a,
-.lab-sidebar .nav > .active: hover > a,
-.lab-sidebar .nav > .active: focus > a {
+.lab-sidebar .nav > .active:hover > a,
+.lab-sidebar .nav > .active:focus > a {
   font-weight: bold;
   color: #563d7c;
   background-color: transparent;

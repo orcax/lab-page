@@ -64,12 +64,13 @@ $(function(){
       '<span class="txt-white">fields = (</span>' +
       '<span class="txt-green">"Distributed Computing"</span>' + 
       '<span class="txt-white">,&nbsp</span>' +
-      '<span class="txt-green">"Service Computing"</span>' + 
+      '<span class="txt-green">"Intelligent Interconnection"</span>' + 
       '<span class="txt-white">)</span><br/>' +
       '<span class="txt-pink">for&nbsp</span>' +
       '<span class="txt-white">field&nbsp</span>' +
       '<span class="txt-pink">in&nbsp</span>' +
-      '<span class="txt-white">fields:<br/>&nbsp&nbspresearch(field, level=</span>' +
+      '<span class="txt-white">fields:</span><br/>' +
+      '<span class="txt-white">&nbsp&nbsp&nbsp&nbspresearch(field, level=</span>' +
       '<span class="txt-green">"state-of-the-art"</span>' + 
       '<span class="txt-white">)</span>' +
       ''
@@ -79,7 +80,7 @@ $(function(){
     loop: false,
     loopCount: false,
     callback: function() {
-      $('#welcome-body').animate({height: '135px'}, {
+      $('#welcome-code-body').animate({height: '135px'}, {
         complete: function() {
           setTimeout(function() {
             $('#welcome-keyword').show();
